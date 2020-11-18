@@ -15,12 +15,17 @@ footer{
 }
 body{
   font-family: 'Architects Daughter', cursive;
+  color: Red;
+
+}
+p{
+  font-size: 2.5rem;
 
 }
 .btn1{
   margin: 20px;
 }
-.main{
+.maine{
   width: 100%;
   text-align: center;
 }

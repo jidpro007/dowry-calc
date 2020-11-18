@@ -1,0 +1,62 @@
+<%- include("partials/header") -%>
+<div class="image">
+</div>
+<form action="/calc" method="post">
+  <div class="row" style="margin:0px 5px 20px 5px">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name" name="fname">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name" name="lname">
+    </div>
+  </div>
+  <div class="form-group" style="margin:20px 5px">
+    <label for="exampleFormControlSelect1" style="margin:5px 5px 10px 20px">Domain of study</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option value="nonmed">Non-Medical</option>
+      <option value="med">Medical</option>
+      <option value="com">Commerce</option>
+      <option value="rest">Arts</option>
+      <option value="khel">Good at Sports, not much in studies</option>
+    </select>
+  </div>
+  <div class="form-group" style="margin:20px 5px">
+    <label for="exampleFormControlSelect1" style="margin:5px 5px 10px 20px">College</label>
+    <select class="form-control" id="exampleFormControlSelect1" name="college">
+      <option value="best">(IIT's or NIT's)/Govt. Medical College/SRCC </option>
+      <option value="better">BITS/Premier Private Institution</option>
+      <option value="good">Some other Govt. College</option>
+      <option value="outstand">Foreign University</option>
+      <option value="so">Others</option>
+    </select>
+  </div>
+  <div class="row" style="margin:20px 5px">
+      <legend class="col-form-label col-sm-2 pt-0">Maanglik??</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="Maanglik" id="gridRadios1" value="yes">
+          <label class="form-check-label" for="gridRadios1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="Maanglik" id="gridRadios2" value="no">
+          <label class="form-check-label" for="gridRadios2">
+            No
+          </label>
+        </div></div></div>
+        <div class="form-group" style="margin:20px 5px">
+          <label for="exampleFormControlSelect1" style="margin:5px 5px 10px 20px">Gender</label>
+          <select class="form-control" id="exampleFormControlSelect1" name="gender">
+            <option value="male">MALE</option>
+            <option value="female">FEMALE</option>
+            <option value="oth">others</option>
+          </select>
+        </div>
+  <div class="form-group">
+   <label for="exampleFormControlFile1">Example file input</label>
+   <input type="file" class="form-control-file" id="exampleFormControlFile1">
+ </div>
+ <button type="submit" class="btn btn1 btn-info btn-lg">Calculate Expected Dowry</button>
+</form>
+<%- include("partials/footer") -%>
